@@ -13,7 +13,6 @@ function devInfo(data){
 		var imgURL=item.snippet.thumbnails.default.url;
 		var newElem=$('#template').clone();
 		newElem.find('img').attr('src',imgURL);
-		alert(item.id.videoId);
 		var vidURL=newElem.find('a').attr('href')+item.id.videoId;
 		newElem.find('a').attr('href',vidURL);
 		newElem.removeAttr('hidden');
